@@ -3,7 +3,7 @@ import gspread
 
 # Define the scope and credentials for accessing Google Sheets API
 scope = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive']
-credentials = ServiceAccountCredentials.from_json_keyfile_name('D:\\CODE\\python\\smart-firmament-420716-edcfe5b6cccc.json', scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
 
 # Authenticate with Google Sheets API
 client = gspread.authorize(credentials)
